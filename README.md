@@ -16,8 +16,8 @@ From the repository root,
 2. run `./gradlew bootjar` to create executable jar. The jar will be located inside build directories.
 
 ## Need to be added:
-Since this application uses cloud Atlas mongodb and have removed mongo-config.properties file, if you want to use mongodb cloud you can add the file in main/resources
-FileName should be exact same as I have provided this filename to Application.java as property file, if you wish to change it change in Application.java too
+Since this application uses cloud Atlas mongodb and I have removed mongo-config.properties file which contain username and password of database, if you want to use mongodb cloud you can add the file in main/resources
+FileName should be exact same as I have provided this filename to LeaderboardApplication.java as property file, if you wish to change it change in LeaderboardApplication.java too
 #### mongo-config.properties
 - mongodb.username=username
 - mongodb.password=password
