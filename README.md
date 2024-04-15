@@ -23,4 +23,4 @@ FileName should be exact same as I have provided this filename to Application.ja
 - mongodb.password=password
 
 ## PostMan Collection
-- [PostManCollection.json]([https://github.com/kunaljs-sudo/LeaderBoard/blob/main/psotmanCollection.json](https://api.postman.com/collections/29849722-a3930771-8fdd-4cdb-a5cd-c38c0385974c?access_key=PMAT-01HVGSR1AVXMRMBXNNWFFPBN3B))
+- [PostManCollection.json](https://github.com/kunaljs-sudo/LeaderBoard/blob/main/psotmanCollection.json](https://api.postman.com/collections/29849722-a3930771-8fdd-4cdb-a5cd-c38c0385974c?access_key=PMAT-01HVGSR1AVXMRMBXNNWFFPBN3B)
