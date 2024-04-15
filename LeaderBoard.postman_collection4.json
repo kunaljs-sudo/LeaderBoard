@@ -1,0 +1,226 @@
+{
+	"info": {
+		"_postman_id": "a3930771-8fdd-4cdb-a5cd-c38c0385974c",
+		"name": "LeaderBoard",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29849722"
+	},
+	"item": [
+		{
+			"name": "GetAllUsers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8081/users"
+			},
+			"response": [
+				{
+					"name": "GetAllUsers",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8081/users"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Apr 2024 10:59:06 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"users\": [\n        {\n            \"userId\": \"6616e451d716216f86f4bcb4\",\n            \"username\": \"kunal jaiswal\",\n            \"score\": 62,\n            \"badges\": null\n        },\n        {\n            \"userId\": \"6616e341d59e962bf33484f5\",\n            \"username\": \"kunal\",\n            \"score\": 61,\n            \"badges\": null\n        },\n        {\n            \"userId\": \"6616d2ee7e0e500a4ffdcf71\",\n            \"username\": \"kj\",\n            \"score\": 22.2,\n            \"badges\": null\n        },\n        {\n            \"userId\": \"6616e2857e0e500a4ffdcf72\",\n            \"username\": \"kj\",\n            \"score\": 22.2,\n            \"badges\": null\n        },\n        {\n            \"userId\": \"661cf4d23176fc3c7eafda42\",\n            \"username\": \"aman sinha\",\n            \"score\": 6,\n            \"badges\": null\n        },\n        {\n            \"userId\": \"6616e2c4d59e962bf33484f4\",\n            \"username\": \"kunal\",\n            \"score\": 0,\n            \"badges\": null\n        },\n        {\n            \"userId\": \"661cf50f3176fc3c7eafda43\",\n            \"username\": \"aman sinha\",\n            \"score\": 0,\n            \"badges\": null\n        },\n        {\n            \"userId\": \"661d00658b4d1a7da895e659\",\n            \"username\": \"jkunal\",\n            \"score\": 0,\n            \"badges\": null\n        },\n        {\n            \"userId\": \"661d00a90d2af631b01c125d\",\n            \"username\": \"jkunal\",\n            \"score\": 0,\n            \"badges\": null\n        },\n        {\n            \"userId\": \"661d00b80d2af631b01c125e\",\n            \"username\": \"asd\",\n            \"score\": 0,\n            \"badges\": null\n        },\n        {\n            \"userId\": \"661d01580d2af631b01c125f\",\n            \"username\": \"bad request\",\n            \"score\": 0,\n            \"badges\": null\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GetUserById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8081/users/6616e451d716216f86f4bcb4"
+			},
+			"response": [
+				{
+					"name": "GetUserById",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8081/users/6616e451d716216f86f4bcb4"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Apr 2024 12:21:14 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"userId\": \"6616e451d716216f86f4bcb4\",\n        \"username\": \"kunal jaiswal\",\n        \"score\": 62,\n        \"badges\": null\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "UpdateScoreOfUserById",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"score\":50}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8081/users/661d0885fdddda254bd59171"
+			},
+			"response": [
+				{
+					"name": "UpdateScoreOfUserById",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"score\":50}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8081/users/661d0885fdddda254bd59171"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Apr 2024 12:21:28 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"userId\": \"661d0885fdddda254bd59171\",\n        \"username\": \"new User\",\n        \"score\": 50,\n        \"badges\": [\n            \"CodeChamp\",\n            \"CodeNinja\",\n            \"CodeMaster\"\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "RegisterNewUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"Kunal Jaiswal\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8081/users"
+			},
+			"response": [
+				{
+					"name": "RegisterNewUser",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\":\"Kunal Jaiswal\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8081/users"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 15 Apr 2024 12:21:24 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"userId\": \"661d1bc4f2764324377044e4\",\n        \"username\": \"Kunal Jaiswal\",\n        \"score\": 0,\n        \"badges\": []\n    }\n}"
+				}
+			]
+		}
+	]
+}
